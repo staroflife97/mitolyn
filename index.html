@@ -177,10 +177,11 @@ supporting metabolic health at its foundation.
 </p>
 
 <a class="cta"
-   href="https://6a11b5v93fqpgij8qfpd-i5w6u.hop.clickbank.net"
-   onclick="fbq('track','ViewContent');">
+   href="javascript:void(0)"
+   onclick="goCheckout()">
 See the Full Explanation on This Approach
 </a>
+
 
 <h2>Why This Matters</h2>
 
@@ -217,6 +218,16 @@ Disclaimer: This page is for informational purposes only and does not provide me
 I may earn a commission if you choose to purchase through the link provided,
 at no additional cost to you. Individual results may vary.
 </p>
+<script>
+function goCheckout() {
+  fbq('trackCustom', 'ClickToPurchase', {
+    source: 'LandingToClickbank'
+  });
+  setTimeout(function () {
+    window.location.href = "https://6a11b5v93fqpgij8qfpd-i5w6u.hop.clickbank.net";
+  }, 300);
+}
+</script>
 
 </body>
 </html>
